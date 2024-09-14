@@ -15,18 +15,28 @@ const TodoList = () => {
   const completeTodo = (id) => {
     setTodos(todos.map(todo => {
       if (todo.id === id) {
-        Swal.fire({
-          title: 'Task Completed!',
-          text: 'The task has been marked as completed.',
-          icon: 'success',
-          confirmButtonText: 'OK'
-        });
-        return { ...todo, completed: !todo.completed };
+        // Determine if the task is being completed or undone
+        const isCompleting = !todo.completed;
+  
+        // Update the task's completed status
+        const updatedTodo = { ...todo, completed: isCompleting };
+  
+        // Show alert only if the task is being marked as completed
+        if (isCompleting) {
+          Swal.fire({
+            title: 'Task Completed!',
+            text: 'The task has been marked as completed.',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          });
+        }
+  
+        return updatedTodo;
       }
       return todo;
     }));
   };
-
+  
   const deleteTodo = (id) => {
     Swal.fire({
       title: 'Are you sure?',
