@@ -1,0 +1,663 @@
+.todo-list-container {
+  padding: 20px;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.todo-item.low {
+  background-color: #d3ffd3; /* Light green */
+}
+
+.todo-item.medium {
+  background-color: #ffffd3; /* Light yellow */
+}
+
+.todo-item.high {
+  background-color: #ffd3d3; /* Light red */
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+}
+
+.todo-item-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.view-mode .todo-text {
+  cursor: pointer;
+}
+
+.edit-mode input {
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
+
+
+
+
+
+
+
+/* src/styles/TodoList.css */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.todo-list-container {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item.low {
+  border-left: 5px solid green;
+}
+
+.todo-item.medium {
+  border-left: 5px solid orange;
+}
+
+.todo-item.high {
+  border-left: 5px solid red;
+}
+
+.todo-item.completed {
+  background-color: #f0f0f0;
+  text-decoration: line-through;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select,
+.add-todo button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.add-todo button {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #1c6dd0;
+}
+
+
+
+
+
+
+
+/* src/styles/TodoList.css */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.todo-list-container {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.todo-item.low {
+  border-left: 5px solid green;
+}
+
+.todo-item.medium {
+  border-left: 5px solid orange;
+}
+
+.todo-item.high {
+  border-left: 5px solid red;
+}
+
+.todo-item.completed {
+  background-color: #f0f0f0;
+  text-decoration: line-through;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select,
+.add-todo button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.add-todo button {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #1c6dd0;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+
+
+
+
+/* src/styles/TodoList.css */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Styling for the todo list container */
+.todo-list-container {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styling for a todo item */
+.todo-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Priority level colors */
+.todo-item.low {
+  border-left: 5px solid green;
+}
+
+.todo-item.medium {
+  border-left: 5px solid orange;
+}
+
+.todo-item.high {
+  border-left: 5px solid red;
+}
+
+/* Completed tasks should have a red background and be crossed out */
+.todo-item.completed {
+  background-color: #ffdddd; /* Light red for completed tasks */
+  text-decoration: line-through;
+  color: red;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select,
+.add-todo button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Styling for add button */
+.add-todo button {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #1c6dd0;
+}
+
+/* Dark mode specific changes */
+body.dark-mode .todo-item {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .todo-item.completed {
+  background-color: #ff6666; /* Red shade for completed tasks */
+  color: red;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Styling for the todo list container */
+.todo-list-container {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styling for a todo item */
+.todo-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Priority level colors */
+.todo-item.low {
+  border-left: 5px solid green;
+}
+
+.todo-item.medium {
+  border-left: 5px solid orange;
+}
+
+.todo-item.high {
+  border-left: 5px solid red;
+}
+
+/* Completed tasks should have a red background and be crossed out */
+.todo-item.completed {
+  background-color: #ffdddd; /* Light red for completed tasks */
+  text-decoration: line-through;
+  color: red;
+}
+
+.add-todo {
+  margin-bottom: 20px;
+}
+
+.add-todo input,
+.add-todo select,
+.add-todo button {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Styling for add button */
+.add-todo button {
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background-color: #1c6dd0;
+}
+
+/* Dark mode specific changes */
+body.dark-mode .todo-item {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark-mode .todo-item.completed {
+  background-color: #ff6666; /* Red shade for completed tasks */
+  color: red;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+
+
+
+
+.main-heading {
+  text-align: center;
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space between heading and to-do list */
+  color: #333; /* Customize color */
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the to-do list */
+  justify-content: center;
+}
+
+.todo-list {
+  width: 100%;
+  max-width: 600px; /* Set a max width for your to-do list */
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Center the TaskVista heading */
+.main-heading {
+  text-align: center;
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 20px; /* Spacing between heading and to-do list */
+  color: #333; /* Adjust the color */
+  padding: 10px;
+}
+
+/* Center the to-do list */
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the to-do list content */
+  justify-content: center;
+}
+
+.todo-list {
+  width: 100%;
+  max-width: 600px; /* Adjust the width of the to-do list */
+  margin: 0 auto;
+}
+
+/* Center the header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+/* Styles for TaskVista heading */
+.task-vista-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a90e2;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out, scaleUp 1s ease-in-out;
+  position: relative;
+}
+
+/* Animation for fade in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for scaling */
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+/* src/Styles/TodoList.css */
+.task-vista-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a90e2;
+  margin-top: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.todo-list-container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.todo-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #357ab7;
+}
+
+.button-group button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  .task-vista-heading {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+/* src/Styles/TodoList.css */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-item .view-mode {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-text {
+  flex-grow: 1; /* Makes the text span take up available space */
+  margin-right: 15px; /* Space between text and buttons */
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.edit-mode {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-mode input {
+  margin-right: 10px;
+}
+
+.edit-mode button {
+  margin-left: 5px;
+}

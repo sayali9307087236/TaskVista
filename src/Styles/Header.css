@@ -1,0 +1,166 @@
+/* src/styles/Header.css */
+
+.header {
+    background-color: #fff; /* Light background for light mode */
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header.dark-mode {
+    background-color: #333; /* Dark background for dark mode */
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+  }
+
+  
+
+
+  .header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;      /* Center the content vertically */
+  padding: 20px 0;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;   /* Ensure the navbar links are centered */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: #333; /* Customize the color */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Center the nav items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+
+
+/* src/Styles/Header.css */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .navbar h1 {
+  font-size: 3rem; 
+  margin-bottom: 10px; 
+} */
+
+.navbar .tagline {
+  font-size: 1.25rem; /* Adjust size as needed */
+  color: #666; /* Adjust color as needed */
+  margin-top: 0; /* Adjust margin if needed */
+}
+
+.header.dark-mode .navbar h1 {
+  color: #e0e0e0; /* Adjust color for dark mode */
+}
+
+.header.dark-mode .navbar .tagline {
+  color: #bbb; /* Adjust color for dark mode */
+}
+
+
+
+
+
+
+/* src/styles/Header.css */
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff; /* Light background for light mode */
+  color: #333; /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header.dark-mode {
+  background-color: #333; /* Dark background for dark mode */
+  color: #fff; /* Light text color for dark mode */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack heading and tagline */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+}
+
+.navbar h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: inherit; /* Use the inherited color */
+}
+
+.navbar .tagline {
+  background-color: yellow; /* Temporary background color for visibility */
+  border: 1px solid red; /* Temporary border to see the element */
+}
+
+.header.dark-mode .navbar .tagline {
+  color: #bbb; /* Adjust color for dark mode */
+}

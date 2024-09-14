@@ -1,0 +1,123 @@
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .dark .app {
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .dark .todo-item {
+    background-color: #3c3f47;
+    color: white;
+  }
+  
+
+
+
+
+  /* src/styles/ThemeToggle.css */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+
+
+/* src/styles/ThemeToggle.css */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle svg {
+  margin-left: 5px; /* Adds spacing between icon and text if needed */
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+
+
+
+
+
+/* src/styles/ThemeToggle.css */
+.theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle svg {
+  margin-right: 8px; /* Adds spacing between the icon and the text */
+}
+
+.toggle-text {
+  margin-left: 5px;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .todo-list-container {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}

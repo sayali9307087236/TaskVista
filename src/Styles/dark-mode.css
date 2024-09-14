@@ -1,0 +1,21 @@
+/* src/styles/dark-mode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .header.dark-mode {
+    background-color: #1f1f1f;
+  }
+  
+  .navbar.dark-mode ul li a {
+    color: #e0e0e0;
+  }
+  
+  .todo-list-container.dark-mode {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+  
+  /* Add other dark mode styles as needed */
+  

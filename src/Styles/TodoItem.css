@@ -1,0 +1,134 @@
+/* src/styles/TodoItem.css */
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .priority-low {
+    background-color: #e0ffe0; /* Light green */
+    border-color: #c0f0c0;
+  }
+  
+  .priority-medium {
+    background-color: #ffffe0; /* Light yellow */
+    border-color: #f0f0c0;
+  }
+  
+  .priority-high {
+    background-color: #ffe0e0; /* Light red */
+    border-color: #f0c0c0;
+  }
+  
+  .priority-low input:checked ~ span {
+    color: #2e8b57; /* Dark green */
+  }
+  
+  .priority-medium input:checked ~ span {
+    color: #ff8c00; /* Dark orange */
+  }
+  
+  .priority-high input:checked ~ span {
+    color: #b22222; /* Dark red */
+  }
+  
+
+
+
+
+
+
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.priority-low {
+    background-color: #e0ffe0; /* Light green */
+    border-color: #c0f0c0;
+}
+
+.priority-medium {
+    background-color: #ffffe0; /* Light yellow */
+    border-color: #f0f0c0;
+}
+
+.priority-high {
+    background-color: #d3d3ff; /* Light blue */
+    border-color: darkblue; /* Dark blue border for high priority */
+}
+
+.priority-low input:checked ~ span {
+    color: #2e8b57; /* Dark green */
+}
+
+.priority-medium input:checked ~ span {
+    color: #ff8c00; /* Dark orange */
+}
+
+.priority-high input:checked ~ span {
+    color: darkblue; /* Dark blue for selected high priority */
+}
+
+
+
+
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.priority-low {
+  background-color: #e0ffe0; /* Light green */
+  border-color: #c0f0c0;
+}
+
+.priority-medium {
+  background-color: #ffffe0; /* Light yellow */
+  border-color: #f0f0c0;
+}
+
+.priority-high {
+  background-color: #d3d3ff; /* Light blue */
+  border-color: darkblue; /* Dark blue border for high priority */
+}
+
+.priority-low input:checked ~ span {
+  color: #2e8b57; /* Dark green */
+}
+
+.priority-medium input:checked ~ span {
+  color: #ff8c00; /* Dark orange */
+}
+
+.priority-high input:checked ~ span {
+  color: darkblue; /* Dark blue for selected high priority */
+}
